@@ -1,0 +1,6 @@
+Program obsługuję silnik orad diody. 
+Po wpisaniu liczby - procentow silnik będzie kręcił się z takim procentem mocy. 
+Jeśli zostanie podana liczba ujemna silnik będzie kręcił się w drugą stronę.
+Dioda podłączona do pinu 5 świeci się z taką mocą jasności jaka jest wprowadzona liczba.
+Dioda podłączona do pinu 10 świeci się gdy silnik kręci sie w prawo.
+Dioda podłączona do pinu 9 świeci się gdy silnik kręci się w lewo.

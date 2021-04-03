@@ -1,0 +1,32 @@
+int power=0;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(5, OUTPUT);
+}
+
+void loop()
+{
+  if(Serial.available())
+  {
+    power=Serial.parseInt();
+    analogWrite(11, abs(255*(power/100.0)));
+    analogWrite(5, abs(255*(power/100.0)));
+    if(power>=0)
+    {
+      	digitalWrite(10, HIGH);
+  	digitalWrite(9, LOW);
+      	digitalWrite(7, HIGH);
+     	digitalWrite(6, LOW);
+    }
+    else
+    {
+      	digitalWrite(10, LOW);
+ 	digitalWrite(9, HIGH);
+    }
+  }
+  
+}
